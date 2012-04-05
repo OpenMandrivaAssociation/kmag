@@ -1,7 +1,8 @@
 Name: kmag
 Summary: KMag screen magnifier
 Version: 4.8.1
-Release: 1
+Release: 2
+Epoch: 2
 Group: Graphical desktop/KDE
 License: LGPLv2
 URL: http://utils.kde.org/projects/kmag
