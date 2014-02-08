@@ -1,6 +1,6 @@
 Name:		kmag
 Version:	4.12.1
-Release:	1
+Release:	2
 Epoch:		2
 Group:		Graphical desktop/KDE
 Summary:	Screen magnifier for KDE4
