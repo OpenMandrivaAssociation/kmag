@@ -23,9 +23,6 @@ of image analysis, web development etc.
 %{_kde_appsdir}/kmag
 %{_kde_applicationsdir}/kmag.desktop
 %{_kde_iconsdir}/hicolor/*/*/kmag*
-%{_kde_iconsdir}/hicolor/*/actions/followmouse.png
-%{_kde_iconsdir}/hicolor/*/actions/hidemouse.png
-%{_kde_iconsdir}/hicolor/*/actions/window.png
 %{_kde_mandir}/man1/kmag.1.*
 
 #----------------------------------------------------------------------------
@@ -44,6 +41,7 @@ of image analysis, web development etc.
 * Wed Jun 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.13.2-1
 - New version 4.13.2
 - Add qaccessibilityclient-devel to BuildRequires
+- Update files
 
 * Wed Apr 02 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.12.4-1
 - New version 4.12.4
