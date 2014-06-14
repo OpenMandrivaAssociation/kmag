@@ -1,16 +1,15 @@
+Summary:	Screen magnifier for KDE4
 Name:		kmag
 Version:	4.13.2
 Release:	1
 Epoch:		2
+License:	GPLv2+ and GFDL
 Group:		Graphical desktop/KDE
-Summary:	Screen magnifier for KDE4
-URL:		http://www.kde.org/applications/utilities/kmag/
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
-License:	GPLv2 and GFDL
+Url:		http://www.kde.org/applications/utilities/kmag/
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel
+BuildRequires:	qaccessibilityclient-devel
 Requires:	kdebase4-runtime
-Obsoletes:	kdeaccessibility4-core < 2:4.5.71
-Obsoletes:	kdeaccessibility4 < 2:4.5.71
 
 %description
 KMag is a small utility for Linux to magnify a part of the screen. KMag is very
@@ -29,6 +28,7 @@ of image analysis, web development etc.
 %{_kde_iconsdir}/hicolor/*/actions/window.png
 %{_kde_mandir}/man1/kmag.1.*
 
+#----------------------------------------------------------------------------
 
 %prep
 %setup -q
@@ -43,6 +43,7 @@ of image analysis, web development etc.
 %changelog
 * Wed Jun 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.13.2-1
 - New version 4.13.2
+- Add qaccessibilityclient-devel to BuildRequires
 
 * Wed Apr 02 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.12.4-1
 - New version 4.12.4
