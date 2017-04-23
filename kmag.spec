@@ -1,6 +1,6 @@
 Summary:	Screen magnifier for KDE4
 Name:		kmag
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		2
 License:	GPLv2+ and GFDL
