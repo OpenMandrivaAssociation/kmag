@@ -1,3 +1,4 @@
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Screen magnifier for KDE4
 Name:		kmag
 Version:	17.04.0
@@ -6,7 +7,7 @@ Epoch:		2
 License:	GPLv2+ and GFDL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/utilities/kmag/
-Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs-devel
 BuildRequires:	qaccessibilityclient-devel
 Requires:	kdebase4-runtime
