@@ -10,6 +10,7 @@ Url:		http://www.kde.org/applications/utilities/kmag/
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake cmake(ECM) ninja
 BuildRequires:	cmake(KF5Config) cmake(KF5ConfigWidgets) cmake(KF5CoreAddons) cmake(KF5I18n) cmake(KF5KIO) cmake(KF5WidgetsAddons) cmake(KF5XmlGui) cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5PrintSupport) cmake(Qt5Widgets) cmake(QAccessibilityClient)
+BuildRequires:	cmake(KF5DocTools)
 
 %description
 KMag is a small utility for Linux to magnify a part of the screen. KMag is very
