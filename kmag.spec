@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Screen magnifier for KDE4
 Name:		kmag
-Version:	17.08.3
+Version:	17.11.90
 Release:	1
 Epoch:		2
 License:	GPLv2+ and GFDL
@@ -25,7 +25,7 @@ of image analysis, web development etc.
 %{_datadir}/kmag/icons/*/*/*/*
 %{_datadir}/kxmlgui5/kmag/kmagui.rc
 %{_mandir}/man1/kmag.1*
-
+%{_datadir}/metainfo/org.kde.kmag.appdata.xml
 
 #----------------------------------------------------------------------------
 
