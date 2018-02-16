@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kmag-17.12.1.tar.xz: d5a0ce92de7af1cf0dcf15726e23e162d83f2944
+sources:
+  kmag-17.12.2.tar.xz: 208ea22ab1180c09cfec42071ccb00f59043b440
