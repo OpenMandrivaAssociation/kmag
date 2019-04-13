@@ -1,9 +1,8 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Screen magnifier for KDE4
 Name:		kmag
-Version:	18.12.3
-Release:	2
-Epoch:		2
+Version:	19.04.0
+Release:	1
 License:	GPLv2+ and GFDL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/utilities/kmag/
@@ -24,7 +23,6 @@ of image analysis, web development etc.
 %{_iconsdir}/hicolor/*/*/kmag*                                                                         
 %{_datadir}/applications/org.kde.kmag.desktop
 %{_datadir}/kmag/icons/*/*/*/*
-%{_datadir}/kxmlgui5/kmag/kmagui.rc
 %{_mandir}/man1/kmag.1*
 %{_datadir}/metainfo/org.kde.kmag.appdata.xml
 
