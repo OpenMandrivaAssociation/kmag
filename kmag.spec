@@ -1,15 +1,27 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
-Summary:	Screen magnifier for KDE4
+
+Summary:	Screen magnifier for KDE Plasma
 Name:		kmag
 Version:	20.04.2
-Release:	1
+Release:	2
 License:	GPLv2+ and GFDL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/utilities/kmag/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 Patch0:		kmag-18.11.80-compile.patch
-BuildRequires:	cmake cmake(ECM) ninja
-BuildRequires:	cmake(KF5Config) cmake(KF5ConfigWidgets) cmake(KF5CoreAddons) cmake(KF5I18n) cmake(KF5KIO) cmake(KF5WidgetsAddons) cmake(KF5XmlGui) cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5PrintSupport) cmake(Qt5Widgets) cmake(QAccessibilityClient)
+BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(KF5Config)
+BuildRequires:	cmake(KF5ConfigWidgets)
+BuildRequires:	cmake(KF5CoreAddons)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5KIO)
+BuildRequires:	cmake(KF5WidgetsAddons)
+BuildRequires:	cmake(KF5XmlGui)
+BuildRequires:	cmake(Qt5Core)
+BuildRequires:	cmake(Qt5Gui)
+BuildRequires:	cmake(Qt5PrintSupport)
+BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(QAccessibilityClient)
 BuildRequires:	cmake(KF5DocTools)
 
 %description
@@ -18,9 +30,9 @@ useful for people with visual disabilities and for those working in the fields
 of image analysis, web development etc.
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog COPYING COPYING.DOC README TODO                                                 
-%{_bindir}/kmag                                                                                        
-%{_iconsdir}/hicolor/*/*/kmag*                                                                         
+%doc AUTHORS ChangeLog COPYING COPYING.DOC README TODO
+%{_bindir}/kmag
+%{_iconsdir}/hicolor/*/*/kmag*
 %{_datadir}/applications/org.kde.kmag.desktop
 %{_datadir}/kmag/icons/*/*/*/*
 %{_mandir}/man1/kmag.1*
