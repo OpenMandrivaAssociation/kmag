@@ -2,7 +2,7 @@
 
 Summary:	Screen magnifier for KDE Plasma
 Name:		kmag
-Version:	20.12.3
+Version:	21.03.80
 Release:	1
 License:	GPLv2+ and GFDL
 Group:		Graphical desktop/KDE
