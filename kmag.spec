@@ -2,13 +2,12 @@
 
 Summary:	Screen magnifier for KDE Plasma
 Name:		kmag
-Version:	21.04.2
+Version:	21.07.90
 Release:	1
 License:	GPLv2+ and GFDL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/utilities/kmag/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
-Patch0:		kmag-18.11.80-compile.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5ConfigWidgets)
