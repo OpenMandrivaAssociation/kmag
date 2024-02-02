@@ -2,8 +2,8 @@
 
 Summary:	Screen magnifier for KDE Plasma
 Name:		plasma6-kmag
-Version:	24.01.90
-Release:	2
+Version:	24.01.95
+Release:	1
 License:	GPLv2+ and GFDL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/utilities/kmag/
