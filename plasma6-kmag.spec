@@ -9,7 +9,7 @@ Version:	24.08.2
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+ and GFDL
 Group:		Graphical desktop/KDE
-Url:		http://www.kde.org/applications/utilities/kmag/
+Url:		https://www.kde.org/applications/utilities/kmag/
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/accessibility/kmag/-/archive/%{gitbranch}/kmag-%{gitbranchd}.tar.bz2#/kmag-%{git}.tar.bz2
 %else
