@@ -6,7 +6,7 @@ Version:	23.08.5
 Release:	1
 License:	GPLv2+ and GFDL
 Group:		Graphical desktop/KDE
-Url:		http://www.kde.org/applications/utilities/kmag/
+Url:		https://www.kde.org/applications/utilities/kmag/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5Config)
