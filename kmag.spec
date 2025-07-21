@@ -5,7 +5,7 @@
 
 Summary:	Screen magnifier for KDE Plasma
 Name:		kmag
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+ and GFDL
 Group:		Graphical desktop/KDE
@@ -30,6 +30,11 @@ BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(QAccessibilityClient)
 BuildRequires:	cmake(KF6DocTools)
 
+%rename plasma6-kmag
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 KMag is a small utility for Linux to magnify a part of the screen. KMag is very
 useful for people with visual disabilities and for those working in the fields
@@ -42,18 +47,3 @@ of image analysis, web development etc.
 %{_datadir}/kmag/icons/*/*/*/*
 %{_mandir}/man1/kmag.1*
 %{_datadir}/metainfo/org.kde.kmag.metainfo.xml
-
-#----------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kmag-%{?git:%{gitbranchd}}%{!?git:%{version}}
-
-%build
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-%ninja
-
-%install
-%ninja_install -C build
-%find_lang %{name} --all-name --with-html --with-man
